@@ -34,7 +34,11 @@ function readLine() {
 
 function countApplesAndOranges(s, t, a, b, apples, oranges) {
     // Write your code here
-
+    let ap = 0, or = 0
+    apples.forEach(el => {if (el>0 && a+el>=s && a+el<=t) {ap++}})
+    oranges.forEach(el => {if (el<0 && b+el>=s && b+el<=t) {or++}})
+    console.log(ap)
+    console.log(or)
 }
 
 function main() {
